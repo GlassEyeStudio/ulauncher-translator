@@ -20,7 +20,7 @@ class TranslateShellParser:
 
     def execute(self):
         try:
-            args = shlex.split('trans -no-ansi ' + self.request)
+            args = shlex.split('trans -no-ansi -b' + self.request)
         except ValueError:
             raise StopIteration
 
